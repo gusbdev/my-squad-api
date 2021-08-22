@@ -35,6 +35,21 @@ router.post("/team/save", (req, res) => {
   }
 });
 
+router.put("/team/update", (req, res) => {
+  const { _id, name } = req.body;
+  Team.findByIdAndUpdate(_id, {
+    name,
+  })
+    .then(() => {
+      res.status(200).send({
+        response: "Time atualizado com sucesso!",
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 router.delete("/team/delete", (req, res) => {
   const { _id } = req.body;
   Team.findByIdAndDelete(_id)
