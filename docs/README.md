@@ -1,1 +1,0 @@
-# mysquad.doc.github.io
