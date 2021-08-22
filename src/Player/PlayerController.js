@@ -43,6 +43,26 @@ router.post("/player/save", (req, res) => {
   }
 });
 
+router.put("/player/update", (req, res) => {
+  const { _id, name, birthday, photo, foot, position, character } = req.body;
+  Player.findByIdAndUpdate(_id, {
+    name,
+    birthday,
+    photo,
+    foot,
+    position,
+    character,
+  })
+    .then(() => {
+      res.status(200).send({
+        response: "Jogador atualizado com sucesso!",
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 router.delete("/player/delete", (req, res) => {
   const { _id } = req.body;
   Player.findByIdAndDelete(_id)
