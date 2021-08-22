@@ -43,4 +43,17 @@ router.post("/player/save", (req, res) => {
   }
 });
 
+router.delete("/player/delete", (req, res) => {
+  const { _id } = req.body;
+  Player.findByIdAndDelete(_id)
+    .then(() => {
+      res.status(200).send({
+        response: "Jogador removido com sucesso!",
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 module.exports = router;
