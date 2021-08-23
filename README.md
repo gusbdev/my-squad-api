@@ -62,6 +62,7 @@ npm start
 
 - [Express](https://expressjs.com/) - framework that handles HTTP requests among other things
 - [Mongoose](https://mongoosejs.com/) - elegant mongodb object modeling for node.js
+- [Insomnia Documenter](https://github.com/jozsefsallai/insomnia-documenter) - like Postman Documenter but for Insomnia! With this tool you can generate beautiful API documentation pages using your Insomnia export file.
 
 ## Developers :octocat:
 
