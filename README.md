@@ -2,7 +2,7 @@
 
 <p align="center">
 <img src="https://img.shields.io/static/v1?label=NODEJS&message=Runtime%20Built&color=339933&style=for-the-badge&logo=Node.js"/>
-<img src="https://img.shields.io/static/v1?label=MongoDB&message=Runtime%20Built&color=339933&style=for-the-badge&logo=mongodb" />
+<img src="https://img.shields.io/static/v1?label=MongoDB&message=Database&color=339933&style=for-the-badge&logo=mongodb" />
   <img src="https://img.shields.io/static/v1?label=JAVASCRIPT&message=Language&color=F7DF1E&style=for-the-badge&logo=javascript"/>
   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
   <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
